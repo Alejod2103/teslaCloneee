@@ -1,11 +1,9 @@
-import { useState, setState } from 'react'
 import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 
 function Header() {
   
-    const {burguerStatus, setBurguerStatus} = useState(false);
     
    return (
         <Container>
@@ -131,7 +129,6 @@ const BurguerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
-  transform: ${ props => props.Show ? 'translateX(0)': 'translateX(100%)' };
   li {
       padding: 15px 0;
       border-bottom: 1px solid rgba(0, 0, 0, .2);
