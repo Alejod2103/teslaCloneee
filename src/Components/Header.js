@@ -23,9 +23,9 @@ function Header() {
               <a href="#">Shop</a>
               <a href="#">Tesla</a>
               <a className="ae" href="#">Mi Cuenta</a>
-              <CustomMenu onClick={() => setBurguerStatus(true)}/>
+              <CustomMenu />
           </RightMenu>
-          <BurguerNav Show={burguerStatus}>
+          <BurguerNav>
               <CloseWrapper>
               <CustomClose />
               </CloseWrapper>
